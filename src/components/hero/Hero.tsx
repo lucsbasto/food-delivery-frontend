@@ -4,7 +4,7 @@ import ArrowRight from "../icons/arrow-right/ArrowRight"
 const Hero = () => {
   return (
     <>
-    <section className="flex items-center justify-center gap-10">
+    <section className="flex bg-orange-100 rounded-lg shadow-lg px-10 mt-10 items-center justify-center gap-10">
       <div className="py-20 max-h-full max-w-full">
         <h1 className="text-6xl font-semibold">
           <span className="font-bold text-">Tudo</span><br/> 
@@ -27,7 +27,6 @@ const Hero = () => {
         <Image src={'/pizza.png'} width={2000} height={2000} style={{maxWidth: '70%', maxHeight: '70%'}} alt={'pizza'}/>
       </div>
     </section>
-    <div className="bg-gray-200 w-full h-1 rounded-full"></div>
     </>
   )
 }
