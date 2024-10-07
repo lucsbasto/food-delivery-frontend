@@ -1,3 +1,5 @@
+import { ClerkProvider } from '@clerk/nextjs'
+
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 import './globals.css'
@@ -18,9 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} antialiased`}>
-        <main className="max-w-[80%]  mx-auto p-4">{children}</main>
-      </body>
+      <ClerkProvider>
+        <body className={`${roboto.className} antialiased`}>
+          <main className="max-w-[80%]  mx-auto p-4">{children}</main>
+        </body>
+      </ClerkProvider>
     </html>
   )
 }

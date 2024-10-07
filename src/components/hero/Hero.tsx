@@ -17,7 +17,7 @@ const Hero = () => {
             deliciosa na vida.
           </p>
           <div className="flex gap-4 items-start justify-start">
-            <button className="bg-primary text-white px-4 py-2 rounded-full flex gap-2 items-center font-bold hover:bg-red-600">
+            <button className="bg-primary text-white px-4 py-2 rounded-full flex gap-2 items-center font-bold hover:bg-secondary">
               Peça Agora
               <ArrowRight />
             </button>
@@ -27,7 +27,7 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        <div className="w-full h-full justify-center flex items-center">
+        <div className="w-full h-full justify-center flex items-center sm:">
           <Image
             src={'/hero.png'}
             width={800}

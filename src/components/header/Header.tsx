@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { SignInButton } from '../Button/SignIn'
+import { SignUpButton } from '../Button/SignUp'
 
 const Header = () => {
   return (
@@ -18,18 +20,8 @@ const Header = () => {
         <Link href={''}>Contato</Link>
       </nav>
       <div className="flex gap-8">
-        <Link
-          href={''}
-          className="bg-primary text-white px-8 py-2 rounded-full hover:bg-red-600"
-        >
-          Login
-        </Link>
-        <Link
-          href={''}
-          className="bg-primary text-white px-8 py-2 rounded-full hover:bg-red-600"
-        >
-          Registre-se
-        </Link>
+        <SignInButton />
+        <SignUpButton />
       </div>
     </header>
   )
