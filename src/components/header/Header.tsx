@@ -1,24 +1,37 @@
-import Image from "next/image"
-import Link from "next/link"
+import Image from 'next/image'
+import Link from 'next/link'
 
 const Header = () => {
   return (
     <header className="flex items-center justify-between">
-      <Link href={''} className="flex items-center text-primary font-bold text-2xl ">
-      Novo Sabor
-      <Image src={'/logo.png'} width={50} height={50} alt='logo'/>
+      <Link
+        href={''}
+        className="flex items-center text-primary font-bold text-2xl "
+      >
+        Novo Sabor
+        <Image src={'/logo.png'} width={50} height={50} alt="logo" />
       </Link>
       <nav className="flex gap-8 text-gray-500 font-semibold items-center">
-          <Link href={''}>Home</Link>
-          <Link href={''}>Menu</Link>
-          <Link href={''}>Sobre Nós</Link>
-          <Link href={''}>Contato</Link>
-        </nav>
+        <Link href={''}>Home</Link>
+        <Link href={''}>Menu</Link>
+        <Link href={''}>Sobre Nós</Link>
+        <Link href={''}>Contato</Link>
+      </nav>
       <div className="flex gap-8">
-        <Link href={''} className="bg-primary text-white px-8 py-2 rounded-full hover:bg-red-600">Login</Link>
-        <Link href={''} className="bg-primary text-white px-8 py-2 rounded-full hover:bg-red-600">Registre-se</Link>
+        <Link
+          href={''}
+          className="bg-primary text-white px-8 py-2 rounded-full hover:bg-red-600"
+        >
+          Login
+        </Link>
+        <Link
+          href={''}
+          className="bg-primary text-white px-8 py-2 rounded-full hover:bg-red-600"
+        >
+          Registre-se
+        </Link>
       </div>
-      </header>
+    </header>
   )
 }
 

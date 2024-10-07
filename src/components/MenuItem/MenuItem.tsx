@@ -1,13 +1,16 @@
 import Image from 'next/image'
 
-const MenuItem = () => {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const MenuItem = ({ title, description }: any) => {
   return (
-    <div className="bg-orange-100 p-4 rounded-md text-center hover:bg-orange-200 hover:shadow-2xl transition-all">
-    <Image src={'/pizza.png'} width={300} height={300} alt={'pizza'}/>
-    <h3 className="text-primary font-bold text-2xl py-3">Pizza</h3>
-    <p className="text-gray-500 pb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-    <button className="bg-primary text-white rounded-full px-4 py-2">Adicionar ao carrinho</button>
-  </div>
+    <div className="flex flex-col items-center justify-center bg-orange-100 p-8 rounded-md hover:shadow-md transition-all">
+      <Image src={'/pizza.png'} width={300} height={300} alt={'pizza'} />
+      <h3 className="text-primary font-bold text-2xl py-3">{title}</h3>
+      <p className="text-gray-500 pb-5">{description}</p>
+      <button className="bg-primary text-white rounded-full px-4 py-2 max-w-[50%]">
+        Adicionar ao carrinho
+      </button>
+    </div>
   )
 }
 
